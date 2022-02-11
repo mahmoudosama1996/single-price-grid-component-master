@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+
+/* ------------ Global ------------- */
+*  {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+   
+}
+body {
+    font-size: 16px;
+}
+a {
+    display: inline-block;
+    text-decoration:none;
+    color: inherit;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+:root {
+     /* theme color */
+    --text-gray:#3f4954;
+    --text-light:#777C92;
+    --bg-color:#0f0f0f;
+    --midnight:#104f55;
+
+
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue1: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+}   
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text-gray {
+      color: var(--text-gray);
+  }
+
+  .text-light {
+    color: var(--text-light);
+    font-weight: 100;
+
+  }
+
+
+/* -----x------ Global ------x------ */
+.container {
+    background-color: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+    font-family: 'karla';
+}
+
+p {
+    margin: 10px 0;
+}
+
+.card-container {
+    display: flex;
+    width: 46%;
+    border-radius: 5px;
+    box-shadow: 4px 2px 20px -10px var(--Grayish-Blue), -4px 2px 20px -10px var(--Grayish-Blue);
+}
+
+/* --------------upper part--------- */
+.card-header {
+    display: flex;
+    background-color: white;
+    color: var(--Grayish-Blue);
+    padding: 40px;
+}
+.card-header h2 {
+    color: var(--Cyan);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.card-header span {
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+    font-size: 1.125em;
+    padding: 5px 0;
+}
+/* ------x------upper part-----x---- */
+
+/* -------------lower part---------- */
+.card-content {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.card-content > div {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Cyan);
+}
+.card-content h3 {
+    font-weight: 400;
+}
+/* -------------subscribe sec------------ */
+.price {
+    display: flex;
+    font-size: 30px;
+    font-weight: 700;
+    align-items: center;
+    margin: 15px 0 5px 0;
+}
+.price span {
+    font-weight: 100;
+    font-size: .55em;
+    color: var(--Light-Gray);
+    margin-left: 10px;
+    opacity: 75%;
+}
+.card-subs p {
+    margin: 5px 0;
+    font-size: .95em;
+    opacity: 90%;
+    font-weight: 100;
+    
+}
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Bright-Yellow);
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    margin-top: 25px ;
+    box-shadow: 0 8px 50px -20px var(--midnight), 0 6px 60px -20px var(--midnight);
+    
+}
+/* ------xx-----subscribe sec----xx------ */
+
+
+/* --------------about-sec-------------- */
+.about {
+    background-color: var(--Cyan);
+    opacity: 75% ;
+}
+.about p {
+    margin: 15px 0 0 0;
+    color: var(--Light-Gray);
+    font-size: .88em;
+    line-height: 1.5em;
+    width: 90%;
+    font-weight: lighter;
+}
+/* -----xx-----about-sec-----xx----- */
+
+
+@media screen and  (max-width:376px) {
+    .card-container {
+        width:90% ;
+    }
+
+    .card-content > div {
+        width: 100%;
+    }
+}
