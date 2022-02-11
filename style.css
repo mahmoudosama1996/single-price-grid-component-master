@@ -70,8 +70,9 @@ img {
 .container {
     background-color: var(--Light-Gray);
     display: flex;
+    width: 1440px;
     justify-content: center;
-    padding: 75px 0;
+    padding: 100px 0;
     font-family: 'karla';
 }
 
@@ -81,7 +82,7 @@ p {
 
 .card-container {
     display: flex;
-    width: 46%;
+    width: 45%;
     border-radius: 5px;
     box-shadow: 4px 2px 20px -10px var(--Grayish-Blue), -4px 2px 20px -10px var(--Grayish-Blue);
 }
@@ -111,6 +112,7 @@ p {
     color: white;
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .card-content > div {
     width: 50%;
